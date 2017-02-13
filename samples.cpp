@@ -8,17 +8,11 @@ int main()
      arr[0]=arr[1]=true;
      int j=0;
      
-     for (int i = 0; i< 100; i++) {
+     for (int i = 2; i< 100; i++) {
      	if(!arr[i]){
-     		for (j=0; j*j<i;j++){
-			 
-     			if (i%j==0)
-				 {
-     				arr[i]=true;
-     				break;
-				 }
-     		
-				 }
+     		for (j=i*i; j<100;j++){
+			 arr[i]=true;
+		}
      		//cout << arr[i]<< endl;	
 		}
 		 
